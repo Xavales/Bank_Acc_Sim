@@ -9,9 +9,9 @@ A program which simulates the way a bank handles its transactions with its clien
 
 -**Bankclient**: Bankclient establashes a connection with the bankserver through an IP and port which are defined from the user input. Then it begins to accept commands from stdin or an input file and prints the answers it receives from bankserver in stdout.
 
-## Command and Execution Details
+## Commands and Execution Details
 
-Bankserver execution from command input: 
+**Bankserver usage**: 
 ```
 ./bankserver -p <port> -s <thread pool size> -q <queue size> 
 ```
@@ -20,7 +20,7 @@ where:
   - *thread pool size*: The number of worker threads.
   - *queue size*: The size of the execution queue.
 
-Bankclient execution from command input:
+**Bankclient usage**:
 ```
 ./bankclient -h <server host> -p <server port> -i <command file>  
 ```  
@@ -113,10 +113,7 @@ The delay parameter is optional for the first 3 commands. All the other paramete
 3. The server shuts down via the signal ^C (ctrl + C).
   
   
-  
-  
-  
-  
-  
-  
+### Compilation:
+
+Assuming that all files are in the same directory, a simple ``` make ``` command will do the job. Then two executable programs will be produced: *bankserver* and *bankclient*.
   
